@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/blablatdinov/fullstack-javascript-project-44#readme",
   "dependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "readline-sync": "^1.4.10"
   }
 }
