@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import name from './brain-games.js';
+import name from '../index.js';
 
 const checkUserAnswer = (number, answer) => (number % 2 === 0 && answer === 'yes') || (number % 2 !== 0 && answer === 'no');
 
-const game = (playerName) => {
+const evenGame = (playerName) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = Math.floor(Math.random() * 100);
@@ -26,4 +26,4 @@ const game = (playerName) => {
   console.log(`Congratulations, ${playerName}!`);
 };
 
-game(name);
+evenGame(name);
