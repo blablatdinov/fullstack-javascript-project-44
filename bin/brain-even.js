@@ -19,7 +19,7 @@ const evenGame = (playerName) => {
       } else {
         console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
       }
-      console.log("Let's try again, Bill!");
+      console.log(`Let's try again, ${playerName}!`);
       return;
     }
   }

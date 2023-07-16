@@ -8,11 +8,11 @@ const randomNumber = () => Math.floor(Math.random() * 100);
 
 const gcdGame = (userName) => {
   console.log('Find the greatest common divisor of given numbers.');
-  const [a, b] = [randomNumber(), randomNumber()];
-  console.log(`Question: ${a} ${b}`);
-  const answer = readlineSync.question('Your answer: ');
-  const correctAnsewr = gcd(a, b);
   for (let i = 0; i < 3; i += 1) {
+    const [a, b] = [randomNumber(), randomNumber()];
+    console.log(`Question: ${a} ${b}`);
+    const answer = readlineSync.question('Your answer: ');
+    const correctAnsewr = gcd(a, b);
     if (correctAnsewr === Number(answer)) {
       console.log('Correct!');
     } else {
